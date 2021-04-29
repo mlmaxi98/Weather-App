@@ -1,0 +1,24 @@
+.container {
+    min-height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    .title {
+        height: 10%;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(0, 195, 255), 0 0 30px rgb(0, 195, 255), 0 0 40px rgb(0, 195, 255), 0 0 55px rgb(0, 195, 255), 0 0 75px rgb(0, 195, 255), -19px 2px 2px rgba(11, 39, 206, 0), -19px 2px 2px rgba(11, 39, 206, 0);
+    }
+    
+    .about {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        height: 90%;
+        width: 70%;
+        font-size: 1.5rem;
+    }
+}

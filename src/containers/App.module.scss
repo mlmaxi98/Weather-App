@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  background-image: url('https://bpsfuelforthought.files.wordpress.com/2015/06/supercell.jpg');
+  background-repeat: round;
+
+  .loading {
+    min-height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 30vh;
+      width: 30vh;
+      border-radius: 50%;
+    }
+
+  }
+}

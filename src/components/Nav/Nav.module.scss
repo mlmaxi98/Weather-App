@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(37, 43, 78);
+  width: 100%;
+  margin: 0 auto;
+  height: 5vh;
+  padding-right: 20px;
+
+  .links {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    .title {
+      display: flex;
+      padding: 10px 30px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.5s;
+
+      &:hover {
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(0, 195, 255), 0 0 30px rgb(0, 195, 255), 0 0 40px rgb(0, 195, 255), 0 0 55px rgb(0, 195, 255), 0 0 75px rgb(0, 195, 255), -19px 2px 2px rgba(11, 39, 206, 0), -19px 2px 2px rgba(11, 39, 206, 0);
+      }
+    }
+  }
+
+}
