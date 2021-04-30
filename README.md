@@ -5,10 +5,9 @@ Es una aplicación para consultar el clima de las ciudades de todo el mundo. Pue
 ## Instalación
 Hacer un ```npm install``` para poder visualizar esta aplicación.
 ## Imagenes
-1) [Home](https://i.ibb.co/NrKRRht/Countries-APP-images.png)
-2) [Buscando ciudades](https://i.ibb.co/2M52hYV/ordenado.png)
-3) [Viendo detalles de una ciudad](https://i.ibb.co/XjRfyXC/crear.png)
-4) [Detalles](https://i.ibb.co/4Vrp0RM/detalles.png)
+1) [Home](https://i.ibb.co/xg4J5jd/clima1.png)
+2) [Buscando ciudades](https://i.ibb.co/vHqx6Xz/clima2.png)
+3) [Viendo detalles de una ciudad](https://i.ibb.co/VqDvCWY/clima3.png)
 
 ###
 ## Herramientas utilizadas
