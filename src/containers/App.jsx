@@ -6,7 +6,6 @@ import Cards from '../components/Cards/Cards.jsx';
 import Ciudad from '../components/Ciudad/Ciudad.jsx';
 import styles from './App.module.scss'
 import axios from 'axios';
-const apiKey = '9ec47a8150e44e6385aae05be36f9e11';
 
 
 const App = () => {
@@ -23,7 +22,7 @@ const App = () => {
   const onSearch = async (ciudad) => {
     try {
       setLoading(true)
-      const Ciudad = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
+      const Ciudad = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=e5535d7731823c33bb4cf9b032f08e83&units=metric`)
       console.log(Ciudad.data)
       const { clouds, coord, id, main, name, weather, wind } = Ciudad.data
 

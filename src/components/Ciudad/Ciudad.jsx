@@ -16,7 +16,6 @@ export default function Ciudad({ city }) {
                         <li>Temperature: {city.temp || ` - `} ºC</li>
                         <li>Max: {city.max || ` - `} ºC</li>
                         <li>Min: {city.min || ` - `} ºC</li>
-                        <li>Weather: {city.weather || ` - `}</li>
                         <li>Wind: {city.wind || ` - `} km/h</li>
                         <li>Amount of clouds: {city.clouds || ` - `}</li>
                         <li>Latitude: {city.lat || ` - `}º</li>
