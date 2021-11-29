@@ -21,7 +21,6 @@ const App = () => {
   }
   const onSearch = async (ciudad) => {
     const url = `${process.env.REACT_APP_API_KEY}&q=${ciudad}`
-    alert('URL: ', url)
     try {
       setLoading(true)
       const Ciudad = await axios.get(url)
