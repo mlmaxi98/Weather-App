@@ -7,7 +7,6 @@ import Ciudad from '../components/Ciudad/Ciudad.jsx';
 import styles from './App.module.scss'
 import axios from 'axios';
 
-
 const App = () => {
   const [cities, setCities] = useState([]);
   const [loading, setLoading] = useState(false)
@@ -16,13 +15,16 @@ const App = () => {
     if (ciudad.length > 0) return ciudad[0]
     else return null
   }
+
   const onClose = (id) => {
     setCities(oldCities => oldCities.filter(ciudad => ciudad.id !== id));
   }
   const onSearch = async (ciudad) => {
+    const url = `${process.env.REACT_APP_API_KEY}&q=${ciudad}`
+    alert('URL: ', url)
     try {
       setLoading(true)
-      const Ciudad = await axios.get(process.env.URL)
+      const Ciudad = await axios.get(url)
       console.log(Ciudad.data)
       const { clouds, coord, id, main, name, weather, wind } = Ciudad.data
 
