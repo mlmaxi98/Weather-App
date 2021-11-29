@@ -6,7 +6,10 @@ export default function Card({ min, max, name, img, onClose, id }) {
   return (
     <div className={styles.container}>
       <div className={styles.button}>
-        <button onClick={onClose} className={styles.cierre}>X</button>
+        <button onClick={onClose}
+          className={styles.cierre}>
+          X
+        </button>
       </div>
       <div className={styles.info}>
         <div className={styles.titular}>

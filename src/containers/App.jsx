@@ -22,7 +22,7 @@ const App = () => {
   const onSearch = async (ciudad) => {
     try {
       setLoading(true)
-      const Ciudad = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=e5535d7731823c33bb4cf9b032f08e83&units=metric`)
+      const Ciudad = await axios.get(process.env.URL)
       console.log(Ciudad.data)
       const { clouds, coord, id, main, name, weather, wind } = Ciudad.data
 
@@ -64,7 +64,7 @@ const App = () => {
     <div className={styles.container}>
       <Route path='/' render={() => <Nav onSearch={onSearch} />} />
       <Route path='/about' component={About} />
-      { loading ? <Loading /> : <Route exact path='/' render={() => <Cards cities={cities} onClose={onClose} />} />}
+      {loading ? <Loading /> : <Route exact path='/' render={() => <Cards cities={cities} onClose={onClose} />} />}
       <Route exact path='/ciudad/:ciudadId' render={({ match }) => <Ciudad city={onFilter(match.params.ciudadId)} />} />
     </div>
   );

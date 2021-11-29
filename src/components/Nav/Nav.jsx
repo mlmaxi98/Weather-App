@@ -16,9 +16,7 @@ function Nav({ onSearch }) {
         <Link to='/about' className={styles.title}>
           <span>About</span>
         </Link>
-        <SearchBar
-          onSearch={onSearch}
-        />
+        <SearchBar onSearch={onSearch} />
       </div>
     </div>
   );

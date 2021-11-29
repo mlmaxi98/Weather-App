@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import styles from "./SearchBar.module.scss"
-export default function SearchBar({ onSearch }) {
-  const [city, setCity] = useState("");
+const SearchBar = ({ onSearch }) => {
+
+  const [city, setCity] = useState('');
+
+  const handleSearch = () => city && onSearch(city);
+  
   return (
-    <form className={styles.container} onSubmit={(e) => {
-      e.preventDefault();
-      onSearch(city);
-    }}>
+    <div className={styles.container}>
+
       <input
         className={styles.buscador}
         type="search"
@@ -14,12 +16,14 @@ export default function SearchBar({ onSearch }) {
         value={city}
         onChange={e => setCity(e.target.value)}
       />
-      <input
+      <button
         className={styles.boton}
-        type="submit"
-        value="Search"
-      />
+        onClick={handleSearch}>
+        Search
+      </button>
 
-    </form>
+    </div>
   );
 }
+
+export default SearchBar
