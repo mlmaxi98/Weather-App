@@ -5,10 +5,9 @@ const SearchBar = ({ onSearch }) => {
   const [city, setCity] = useState('');
 
   const handleSearch = () => city && onSearch(city);
-  
+
   return (
     <div className={styles.container}>
-
       <input
         className={styles.buscador}
         type="search"
@@ -21,7 +20,6 @@ const SearchBar = ({ onSearch }) => {
         onClick={handleSearch}>
         Search
       </button>
-
     </div>
   );
 }
